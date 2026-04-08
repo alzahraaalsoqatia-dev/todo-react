@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: minecraft;
+    src: url(Minecraft.ttf);
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh; 
+    margin: auto;
+    background-position: center;
+    background-color: #babae2
+}
+
+.container {
+    width: 90px;
+    height: auto;
+    min-height: px;
+    padding: 4px;
+    background: transparent;
+    border: 2px solid #ebd8d0;
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+}
+
+header {
+    font-family: minecraft;
+    font-size: 48px;
+    color: #725c5c;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+h1{
+    font-family: minecraft;
+    font-size: 27px;
+    color: #725c5c;
+    text-align: center;
+    margin-bottom: 60px;
+}
+h3 {
+    font-family: minecraft;
+    font-stretch: ultra-expanded;
+    color: #725c5c;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+button {
+    display: flexbox;
+    font-family: minecraft;
+    font-size: larger;
+    color: #fff;
+    padding: 9px 50px;
+    border-radius: 6px;
+    background: #9989af;
+    transition: all 0.2s ease;
+    margin-bottom: 6.9px;
+    
+}
+
+button:active {
+    transform: scale(0.96)
+}
+
+.item3 {
+    font-family: minecraft;
+    margin-bottom: 10px; 
+    text-align: center;
+    width: 100px;
+    height: auto;
+    min-height: 7px;
+    padding: 4px;
+    background: #ebd8d0;
+    border: 2px solid #ebd8d0;
+    border-radius: 2px;
+}
+
+.pixel-bar {
+    background-color: #3abbbb; /* Teal color */
+    width: 550px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Slight rounding for a modern pixel look */
+    box-shadow: 0px 4px 0px #2d9d9d; /* Adds depth */
+    position: relative;
+    overflow: hidden; /* Ensures animation stays inside */
+    margin-bottom: 20px;
+}
+
+.pixel-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px
+}
+
+.pixel-text {
+    color: white;
+    font-size: 15px;
+    font-family: "Press Start 2P", monospace; /* Pixelated font */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typewriter 4s steps(20, end) 1, blink 0.8s step-end infinite;
+}
+
+/* Typewriter animation */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.blinking-cursor {
+    color: white;
+    font-size: 18px;
+    animation: blink 0.8s step-end infinite;
+}
